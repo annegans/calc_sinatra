@@ -1,0 +1,33 @@
+
+<form action="/mortage" method="get">
+    <label for="principal">PRINCIPAL</label>
+    <input type="text" name="principal" placeholder="Enter the principal">
+    <label for="int_rate">INTEREST RATE</label>
+    <input type="text" name="int_rate" placeholder="Enter the interest rate">
+    <label for="num_payments">NUMBER OF PAYMENTS</label>
+    <input type="text" name="num_payments" placeholder="Enter the number of payments">
+    <input type="submit">
+</form>
+
+
+<% if @result_mort_calc %>
+<p>Based on a principal of <%= @principal %>, an interest rate of <%= @int_rate %>, and <%= @num_payments %> payments, your mortgage is $ <%= @result_mort_calc %> / mon </p>
+<% end %>
+
+
+
+<!-- <div>
+<form action="/mortage" method="get">
+  <label for='principal'>PRINCIPAL</label>
+  <input type='text' name='principal' placeholder='enter principal'>
+  <label for='yearly_intrest'>YEARLY INTREST</label>
+  <input type="text" name='yearly_intrest' placeholder='enter yearly intrest'>
+  <label for="no_payments">NUMBER PAYMENTS</label>
+  <input type="text" name="no_payments" placeholder="enter number of payments">
+  <input type="submit">
+</form>
+</div>
+  
+  <%  @mresult %>
+  <p>The result of <%= @principal %> <%= @yearly_intrest %> <%= @no_payments %> is: <%= @mresult %></p>
+  <%  %> -->

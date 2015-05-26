@@ -1,0 +1,12 @@
+<form action="/power" method="get">
+  <label for='pfirst'>FIRST NUMBER</label>
+  <input type='text' name='pfirst' placeholder='enter the first number'>
+  <label for="psecond">SECOND NUMBER</label>
+  <input type="text" name="psecond" placeholder="enter a second number">
+  <input type="submit">
+</form>
+
+<% if @presult  %>
+  <p>The result of <%= @pfirst %>  <%= @psecond %> is: <%= @presult %></p>
+<% end %>
+

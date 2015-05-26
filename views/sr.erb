@@ -1,0 +1,9 @@
+<form action="/sr" method="get">
+  <label for='sfirst'>FIRST NUMBER</label>
+  <input type='text' name='sfirst' placeholder='enter the first number'>
+  <input type="submit">
+</form>
+
+<% if @sresult  %>
+  <p>The result of <%= @sfirst %>  is: <%= @sresult %></p>
+<% end %>

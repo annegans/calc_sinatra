@@ -1,0 +1,29 @@
+
+<nav>
+    <div class='sider'>
+    <li><a href="/basic">BASIC CALC</a></li>
+    <li><a href="/power">POWER</a></li>
+    <li><a href="/sr">SQUARE ROOT</a></li>
+    </div>
+    <div class='sidel'>
+    <li><a href="/bmi">BMI</a></li>
+    <li><a href="/mortage">MORTAGE</a></li>
+    <li><a href="/trip_calc">TRIP CALC</a></li>
+    </div>
+  </nav>
+
+<div>
+<form action="basic" method="get">
+  <label for='first'>FIRST NUMBER</label>
+  <input type='text' name='first' placeholder='enter the first number'>
+  <label for='operator'>OPERATOR</label>
+  <input type="text" name='operator' placeholder='enter the operator'>
+  <label for="second">SECOND NUMBER</label>
+  <input type="text" name="second" placeholder="enter a second number">
+  <input type="submit">
+</form>
+</div>
+  
+  <% if @result %>
+  <p>The result of <%= @first %> <%= @operator %> <%= @second %> is: <%= @result %></p>
+  <% end %>
