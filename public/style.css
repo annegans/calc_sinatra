@@ -46,24 +46,13 @@ li:hover{
   
   padding-bottom: 2px;
   border-bottom: grey 4px solid;
-
 }
-
 
 li a:hover{
    color:white;
-
 }
 
-div {
 
-  margin-left: 22%;
-  margin-top: 10%;
-}
-
-label {
-  display: block;
-}
 
 .sider {
   -webkit-transform: rotate(-90deg);
@@ -73,14 +62,55 @@ label {
 
 .sidel {
   -webkit-transform: rotate(90deg);
-  margin-top: -3%;
-  margin-right: -65%;
+  margin-top: 0%;
+  margin-right: -85%;
 }
+
+form {
+  /*margin-right: 4%;*/
 }
 
 
 
+label {
+  display: inline-block;
+  padding: 3%;
+}
 
+input{
 
+}
+.label {
+  display: block;
+  padding: 40px;
+ 
+}
+
+.form{
+  text-align: center;
+  margin-top: -30%;
+  
+}
+
+.box-3 {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+
+}
+.box-8 {
+  width: 67%;
+  display: block;
+  margin: 0 auto;
+}
+
+.box-3 label {
+  display: block;
+}
+
+.button {
+
+}
+ 
 
 
